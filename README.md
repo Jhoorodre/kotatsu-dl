@@ -1,43 +1,43 @@
 # kotatsu-dl
-Easy-to-use cross-platform manga downloader with a lot of manga sources supported
+Um downloader de mangás multiplataforma e fácil de usar, com suporte a diversas fontes de mangás.
 
 [![Sources count](https://img.shields.io/badge/dynamic/yaml?url=https%3A%2F%2Fraw.githubusercontent.com%2FYakaTeam%2Fkotatsu-parsers%2Frefs%2Fheads%2Fmaster%2F.github%2Fsummary.yaml&query=total&label=manga%20sources&color=%23E9321C)](https://github.com/YakaTeam/kotatsu-parsers)  [![AUR version](https://img.shields.io/aur/version/kotatsu-dl-git?color=%233584E4)](https://aur.archlinux.org/packages/kotatsu-dl-git)
 
 ![scr](https://github.com/user-attachments/assets/1f1d28f7-9bc1-4d55-8491-43e21242755f)
 
-# Installation
+# Instalação
 
-### For Windows/Linux/Mac users
-Just download the [latest release](https://github.com/YakaTeam/kotatsu-dl/releases/latest) and use it
+### Para usuários do Windows/Linux/Mac
+Basta baixar o [último release](https://github.com/YakaTeam/kotatsu-dl/releases/latest) e usá-lo.
 
 ```shell
 java -jar ./kotatsu-dl.jar
 ```
-Java 17 or later is required
+O Java 17 ou posterior é obrigatório.
 
-### For ArchLinux users
-The package is available in AUR (old build from [KotatsuApp](https://github.com/YakaTeam/kotatsu-dl))
+### Para usuários do ArchLinux
+O pacote está disponível no AUR (build antiga do [KotatsuApp](https://github.com/YakaTeam/kotatsu-dl))
 
 ```shell
 yay -S kotatsu-dl-git
 ```
-When installed from AUR the `kotatsu-dl` command will be available system-wide.
+Ao instalar a partir do AUR, o comando `kotatsu-dl` estará disponível em todo o sistema.
 
-# Usage
+# Como Usar
 
 ```shell
-Usage: kotatsu-dl [<options>] <link>
+Uso: kotatsu-dl [<opções>] <link>
 
-Options:
-  --dest, --destination=<value>  Output file or directory path. Default is current directory
-  --format=(cbz|zip|dir)         Output format
-  -j, --jobs=<int>               Number of parallel jobs for downloading
-  --throttle                     Slow down downloading to avoid blocking your IP address by server
-  --chapters=<numbers or range>  Numbers of chapters to download. Can be a single numbers or range, e.g. "1-4,8,11" or "all"
-  -v, --verbose                  Show more information
-  --sources                      Show list of supported manga sources and exit
-  -h, --help                     Show this message and exit
+Opções:
+  --dest, --destination=<valor>  Caminho do arquivo ou diretório de saída. O padrão é o diretório atual
+  --format=(cbz|zip|dir)         Formato de saída
+  -j, --jobs=<int>               Número de tarefas paralelas para download
+  --throttle                     Desacelera o download para evitar o bloqueio do seu endereço IP pelo servidor
+  --chapters=<números ou faixa>  Números dos capítulos para download. Pode ser um único número ou faixa, ex. "1-4,8,11" ou "all" (todos)
+  -v, --verbose                  Mostra mais informações
+  --sources                      Mostra a lista de fontes de mangás suportadas e sai
+  -h, --help                     Mostra esta mensagem e sai
 
-Arguments:
-  <link>  Direct link to the manga copied from browser as is
+Argumentos:
+  <link>  Link direto para o mangá copiado do navegador
 ```
