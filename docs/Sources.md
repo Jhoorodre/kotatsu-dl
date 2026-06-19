@@ -72,6 +72,7 @@ Acompanhamento do status de desenvolvimento e funcionamento das fontes.
 | MundoHentaiOficial 🔞 | [mundohentaioficial.com](https://mundohentaioficial.com) |
 | Neroxus | [neroxus.com.br](https://neroxus.com.br) |
 | NineManga Brasil | [br.ninemanga.com](https://br.ninemanga.com) |
+| Nexus Toons | [nexustoons.com](https://nexustoons.com) |
 | NinjaComics | [ninjacomics.xyz](https://ninjacomics.xyz) |
 | NirvanaScan | [nirvanascan.com](https://nirvanascan.com) |
 | NocturneSummer 🔞 | [nocfsb.com](https://nocfsb.com) |
@@ -131,7 +132,6 @@ Acompanhamento do status de desenvolvimento e funcionamento das fontes.
 | Mangahost | [mangahost.netlify.app](https://mangahost.netlify.app) |
 | Mangalivre.one | [mangalivre.one](https://mangalivre.one) |
 | Nekotoons | [nekotoons.site](https://nekotoons.site) |
-| nexustoons | [nexustoons.site](https://nexustoons.site) |
 | Pumpkinscan | [pumpkinscan.com](https://pumpkinscan.com) |
 | readmangas | [readmangas.org](https://readmangas.org) |
 | Sakuramangas | [sakuramangas.org](https://sakuramangas.org) |
