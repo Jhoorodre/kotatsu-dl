@@ -40,5 +40,6 @@ bin/
 
 ### VS Code ###
 .vscode/
+.Identifier
 
 ### Mac OS ###
