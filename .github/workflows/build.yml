@@ -1,0 +1,41 @@
+name: Build Kotatsu-DL with Custom Parsers
+
+on:
+  push:
+    branches: [ meu-dl-custom ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout kotatsu-dl
+        uses: actions/checkout@v4
+        with:
+          path: kotatsu-dl
+
+      - name: Checkout kotatsu-parsers
+        uses: actions/checkout@v4
+        with:
+          repository: Jhoorodre/kotatsu-parsers
+          ref: minhas-fontes-custom
+          path: kotatsu-parsers
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: 'gradle'
+
+      - name: Build with Gradle
+        run: |
+          cd kotatsu-dl
+          chmod +x ./gradlew
+          ./gradlew shadowJar
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: kotatsu-dl-jar
+          path: kotatsu-dl/build/libs/kotatsu-dl.jar
