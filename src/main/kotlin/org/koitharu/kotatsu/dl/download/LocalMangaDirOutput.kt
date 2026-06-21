@@ -20,6 +20,7 @@ class LocalMangaDirOutput(
 	private val mutex = Mutex()
 
 	init {
+		rootFile.mkdirs()
 		index.setMangaInfo(manga)
 	}
 

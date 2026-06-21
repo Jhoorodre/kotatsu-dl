@@ -20,10 +20,12 @@ tasks.withType<ShadowJar> {
     archiveVersion = ""
     minimize {
         exclude(dependency("org.openjdk.nashorn:.*:.*"))
+        exclude(dependency("com.microsoft.playwright:.*:.*"))
     }
 }
 
 repositories {
+    mavenLocal()
     mavenCentral()
     google()
     maven { setUrl("https://jitpack.io") }
